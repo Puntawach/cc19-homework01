@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin-block: 16px;
+        }
+        .bar{
+            margin: 8px;
+        }
+        p{
+            padding-block: 16px;
+        }
+        .form-a{
+            border: 1px solid;
+            border-radius: 2%;
+            padding: 20px 30px 30px;
+            width: 400px;
+            display: block;
+        }
+    
+        .form-b{
+            width: 80%;
+            height: 20px;
+        }
+        .form-c{
+            height: 30px;
+            width: 80%;
+        }
+        .formname{
+            width: 80%;
+        }
+        
+        select{
+
+            width: 80%;
+            padding: 2px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <a href="./index.html">Home</a> |
+        <a href="./Education.html">Education</a> |
+        <a href="./Work Experience.html">Work Experience</a> |
+        <a href="#">Contact Me</a> |
+    </div>
+    <hr />
+    <h1>Contact Me</h1>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <div class="form-a">
+           <p>Enter your information</p>
+
+           <label for="fname">Your Name</label>
+           <input class="form-b" type="text" id="fname" name="fname"><br><br>
+           <label for="email">Your E-mail</label>
+           <input class="form-b" type="text" id="email" name="email"><br><br>
+           <label for="gender" name="gender">Gender</label><br>
+           <select class="form-c" name="gender" id="gender" >
+                <option value="" disabled selected hidden>select..
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+           </select>
+           <br><br>
+           <label for="message">Message</label><br>
+           <textarea class="formname" name="Message" id="Message" rows="8" cols="40"></textarea><br><br>
+           <input class="button" type="submit" value="Send">
+           <input class="button" type="reset" value="Clear">
+        </div>
+    </form>
+    
+    
+</body>
+</html>
